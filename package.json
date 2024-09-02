@@ -6,21 +6,28 @@
   "repository": {},
   "license": "UNLICENSED",
   "dependencies": {
+    "@ai-sdk/anthropic": "^0.0.48",
+    "@fal-ai/serverless-client": "^0.14.2",
     "@remotion/cli": "4.0.206",
+    "@remotion/google-fonts": "^4.0.208",
+    "ai": "^3.3.24",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "4.0.206"
+    "remotion": "4.0.206",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.143",
     "prettier": "^3.3.3",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
   "scripts": {
     "start": "remotion studio",
     "build": "remotion render MyComp out/video.mp4",
-    "upgrade": "remotion upgrade"
+    "upgrade": "remotion upgrade",
+    "build:content": "tsx --env-file=.env src/scripts/build-content.ts"
   },
   "packageManager": "npm@10.7.0"
 }
